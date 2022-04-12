@@ -41,6 +41,7 @@ public class Bullet : MonoBehaviour
     void HitTarget()
     {
         Debug.Log("Looks like you got something?!");
+        target.gameObject.GetComponent<Enemy>().lowerHealth();
         Destroy(this.gameObject);
     }
 

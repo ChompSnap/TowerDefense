@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int bankInt = 0;
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,9 @@ public class GameManager : MonoBehaviour
     public void setBankInt(int value)
     {
         bankInt = value;
+    }
+    public void playSound()
+    {
+        audio.Play();
     }
 }
